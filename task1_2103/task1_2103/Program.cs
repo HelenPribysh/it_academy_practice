@@ -10,11 +10,13 @@ namespace task1_2103
     {
         static void Main(string[] args)
         {
+            // For checking task you should uncomment
+
             //task1
-           // EmptyArray();
+            //EmptyArray();
 
             //task2
-           // ArrayOfDifferentSymbols();
+            //ArrayOfDifferentSymbols();
 
             //task3
             MaxValue();
