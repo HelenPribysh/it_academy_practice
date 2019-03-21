@@ -11,10 +11,13 @@ namespace task1_2103
         static void Main(string[] args)
         {
             //task1
-            EmptyArray();
+           // EmptyArray();
 
             //task2
-            ArrayOfDifferentSymbols();
+           // ArrayOfDifferentSymbols();
+
+            //task3
+            MaxValue();
         }
 
         public static void EmptyArray()
@@ -33,6 +36,29 @@ namespace task1_2103
             arrayOfDifferentSymbols[2] += ", guys!";
             foreach (string i in arrayOfDifferentSymbols)
                 Console.WriteLine(i);
+        }
+
+        public static void MaxValue()
+        {
+            Random random = new Random();
+            int[] array = new int[13];
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = random.Next(-100, 100);
+            }
+            foreach (int i in array)
+                Console.WriteLine(i);
+
+            int max = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] > max)
+                {
+                    max = array[i];
+                }
+            }
+            Console.Write("max value ");
+            Console.WriteLine(max);
         }
     }
 }
