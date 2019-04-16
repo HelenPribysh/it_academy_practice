@@ -11,6 +11,7 @@ namespace ConsoleApp5_
         static void Main(string[] args)
         {
             Uniqueltem uniqueltem0 = new Uniqueltem();
+            uniqueltem0.Id = 2;
             Console.WriteLine(uniqueltem0.Id);
             Uniqueltem uniqueltem1 = new Uniqueltem();
             Console.WriteLine(uniqueltem1.Id);
